@@ -2,6 +2,7 @@ package com.wj.testretrfittwoencode;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         initData();
 //        initRequest();
         initRetrofit();
+        ((TextView)findViewById(R.id.hello)).setText(XXTEA.getNativeString());
     }
 
 //    private void initRequest() {

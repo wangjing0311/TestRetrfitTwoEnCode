@@ -13,6 +13,16 @@ import java.util.List;
  */
 public class XXTEA {
 
+    static {
+        System.loadLibrary("NativeLib");
+    }
+
+    public static native String getNativeString();
+
+    public static native byte[] getKey();
+
+    public static native byte[] getIv();
+
     public static String KEY = "0x9E3779B9";
 
     public static String Encrypt(String data, String key) {
